@@ -1,0 +1,92 @@
+﻿@using WeblogAspNet.Data
+@model IEnumerable<AppUser>
+
+@{
+    Layout = "_LayoutAdmin";
+    ViewData["Title"] = "จัดการผู้ใช้";
+    ViewData["CardTitle"] = "จัดการผู้ใช้";
+    ViewBag.ActionName = "ManageUsers";
+    var currentPage = ViewBag.CurrentPage as int?;
+    var totalPages = ViewBag.TotalPages as int?;
+}
+
+<div class="table-responsive">
+    <table class="table table-striped table-hover custom-table">
+        <thead>
+            <tr>
+                <th>ชื่อผู้ใช้</th>
+                <th>ชื่อ</th>
+                <th>นามสกุล</th>
+                <th>วันที่ลงทะเบียน</th>
+                <th>ตำแหน่ง</th>
+                <th>จัดการ</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model)
+            {
+                <tr>
+                    <td>@user.Username</td>
+                    <td>@user.Firstname</td>
+                    <td>@user.Lastname</td>
+                    <td>@user.CreatedAt</td>
+                    <td>
+                        @if (user.IsAdmin)
+                        {
+                            <span class="badge bg-primary w-100">แอดมิน</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-secondary w-100">ผู้ใช้งาน</span>
+                        }
+                    </td>
+                    <td>
+                        <!-- ปุ่มสำหรับเดสก์ท็อป -->
+                        <div class="d-none d-sm-inline">
+                            @if (!user.IsAdmin && !user.IsClose)
+                            {
+                                <form asp-action="BanUser" method="post" style="display:inline;">
+                                    <input type="hidden" name="id" value="@user.UserId" />
+                                    <button type="submit" class="btn btn-danger btn-sm w-75" onclick="return confirm('คุณแน่ใจหรือไม่ว่าต้องการปิดการใช้งานผู้ใช้?');">
+                                        ปิดการใช้งาน
+                                    </button>
+                                </form>
+                            }
+                            else if (!user.IsAdmin && user.IsClose)
+                            {
+                                <form asp-action="BanUser" method="post" style="display:inline;">
+                                    <input type="hidden" name="id" value="@user.UserId" />
+                                    <button type="submit" class="btn btn-success btn-sm w-75" onclick="return confirm('คุณแน่ใจหรือไม่ว่าต้องการเปิดการใช้งานผู้ใช้?');">
+                                        เปิดการใช้งาน
+                                    </button>
+                                </form>
+                            }
+                        </div>
+
+                        <!-- ไอคอนสำหรับมือถือ -->
+                        <div class="d-inline d-sm-none">
+                            @if (!user.IsAdmin && !user.IsClose)
+                            {
+                                <form asp-action="BanUser" method="post" style="display:inline;">
+                                    <input type="hidden" name="id" value="@user.UserId" />
+                                    <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('คุณแน่ใจหรือไม่ว่าต้องการปิดการใช้งานผู้ใช้?');" title="ปิดการใช้งาน">
+                                        <i class="fas fa-ban"></i>
+                                    </button>
+                                </form>
+                            }
+                            else if (!user.IsAdmin && user.IsClose)
+                            {
+                                <form asp-action="BanUser" method="post" style="display:inline;">
+                                    <input type="hidden" name="id" value="@user.UserId" />
+                                    <button type="submit" class="btn btn-success btn-sm" onclick="return confirm('คุณแน่ใจหรือไม่ว่าต้องการเปิดการใช้งานผู้ใช้?');" title="เปิดการใช้งาน">
+                                        <i class="fas fa-check"></i>
+                                    </button>
+                                </form>
+                            }
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

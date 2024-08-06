@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\NungNing\\source\\repos\\WeblogAspNet\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{15A715C5-4EF2-4AC4-9AF1-D203D366947E}|WeblogAspNet\\WeblogAspNet.csproj|c:\\users\\nungning\\source\\repos\\weblogaspnet\\weblogaspnet\\views\\blogpost\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{15A715C5-4EF2-4AC4-9AF1-D203D366947E}|WeblogAspNet\\WeblogAspNet.csproj|solutionrelative:weblogaspnet\\views\\blogpost\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15A715C5-4EF2-4AC4-9AF1-D203D366947E}|WeblogAspNet\\WeblogAspNet.csproj|c:\\users\\nungning\\source\\repos\\weblogaspnet\\weblogaspnet\\views\\blogpost\\post.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{15A715C5-4EF2-4AC4-9AF1-D203D366947E}|WeblogAspNet\\WeblogAspNet.csproj|solutionrelative:weblogaspnet\\views\\blogpost\\post.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15A715C5-4EF2-4AC4-9AF1-D203D366947E}|WeblogAspNet\\WeblogAspNet.csproj|c:\\users\\nungning\\source\\repos\\weblogaspnet\\weblogaspnet\\views\\blogpost\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{15A715C5-4EF2-4AC4-9AF1-D203D366947E}|WeblogAspNet\\WeblogAspNet.csproj|solutionrelative:weblogaspnet\\views\\blogpost\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15A715C5-4EF2-4AC4-9AF1-D203D366947E}|WeblogAspNet\\WeblogAspNet.csproj|c:\\users\\nungning\\source\\repos\\weblogaspnet\\weblogaspnet\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{15A715C5-4EF2-4AC4-9AF1-D203D366947E}|WeblogAspNet\\WeblogAspNet.csproj|solutionrelative:weblogaspnet\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15A715C5-4EF2-4AC4-9AF1-D203D366947E}|WeblogAspNet\\WeblogAspNet.csproj|c:\\users\\nungning\\source\\repos\\weblogaspnet\\weblogaspnet\\views\\blogpost\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{15A715C5-4EF2-4AC4-9AF1-D203D366947E}|WeblogAspNet\\WeblogAspNet.csproj|solutionrelative:weblogaspnet\\views\\blogpost\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15A715C5-4EF2-4AC4-9AF1-D203D366947E}|WeblogAspNet\\WeblogAspNet.csproj|c:\\users\\nungning\\source\\repos\\weblogaspnet\\weblogaspnet\\controllers\\blogpostcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15A715C5-4EF2-4AC4-9AF1-D203D366947E}|WeblogAspNet\\WeblogAspNet.csproj|solutionrelative:weblogaspnet\\controllers\\blogpostcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15A715C5-4EF2-4AC4-9AF1-D203D366947E}|WeblogAspNet\\WeblogAspNet.csproj|c:\\users\\nungning\\source\\repos\\weblogaspnet\\weblogaspnet\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{15A715C5-4EF2-4AC4-9AF1-D203D366947E}|WeblogAspNet\\WeblogAspNet.csproj|solutionrelative:weblogaspnet\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\NungNing\\source\\repos\\WeblogAspNet\\WeblogAspNet\\Views\\BlogPost\\Create.cshtml",
+              "RelativeDocumentMoniker": "WeblogAspNet\\Views\\BlogPost\\Create.cshtml",
+              "ToolTip": "C:\\Users\\NungNing\\source\\repos\\WeblogAspNet\\WeblogAspNet\\Views\\BlogPost\\Create.cshtml",
+              "RelativeToolTip": "WeblogAspNet\\Views\\BlogPost\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-27T16:12:39.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\NungNing\\source\\repos\\WeblogAspNet\\WeblogAspNet\\Views\\BlogPost\\Edit.cshtml",
+              "RelativeDocumentMoniker": "WeblogAspNet\\Views\\BlogPost\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\NungNing\\source\\repos\\WeblogAspNet\\WeblogAspNet\\Views\\BlogPost\\Edit.cshtml",
+              "RelativeToolTip": "WeblogAspNet\\Views\\BlogPost\\Edit.cshtml",
+              "ViewState": "AQIAAHUAAAAAAAAAAAAAAJMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-27T16:12:39.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\NungNing\\source\\repos\\WeblogAspNet\\WeblogAspNet\\Views\\BlogPost\\Index.cshtml",
+              "RelativeDocumentMoniker": "WeblogAspNet\\Views\\BlogPost\\Index.cshtml",
+              "ToolTip": "C:\\Users\\NungNing\\source\\repos\\WeblogAspNet\\WeblogAspNet\\Views\\BlogPost\\Index.cshtml",
+              "RelativeToolTip": "WeblogAspNet\\Views\\BlogPost\\Index.cshtml",
+              "ViewState": "AQIAAGMAAAAAAAAAAAAAAA8AAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-27T16:11:04.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Post.cshtml",
+              "DocumentMoniker": "C:\\Users\\NungNing\\source\\repos\\WeblogAspNet\\WeblogAspNet\\Views\\BlogPost\\Post.cshtml",
+              "RelativeDocumentMoniker": "WeblogAspNet\\Views\\BlogPost\\Post.cshtml",
+              "ToolTip": "C:\\Users\\NungNing\\source\\repos\\WeblogAspNet\\WeblogAspNet\\Views\\BlogPost\\Post.cshtml",
+              "RelativeToolTip": "WeblogAspNet\\Views\\BlogPost\\Post.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-27T16:09:49.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\NungNing\\source\\repos\\WeblogAspNet\\WeblogAspNet\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "WeblogAspNet\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\NungNing\\source\\repos\\WeblogAspNet\\WeblogAspNet\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "WeblogAspNet\\Views\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-27T16:08:34.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\NungNing\\source\\repos\\WeblogAspNet\\WeblogAspNet\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WeblogAspNet\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\NungNing\\source\\repos\\WeblogAspNet\\WeblogAspNet\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WeblogAspNet\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACcAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-27T16:06:31.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BlogPostController.cs",
+              "DocumentMoniker": "C:\\Users\\NungNing\\source\\repos\\WeblogAspNet\\WeblogAspNet\\Controllers\\BlogPostController.cs",
+              "RelativeDocumentMoniker": "WeblogAspNet\\Controllers\\BlogPostController.cs",
+              "ToolTip": "C:\\Users\\NungNing\\source\\repos\\WeblogAspNet\\WeblogAspNet\\Controllers\\BlogPostController.cs",
+              "RelativeToolTip": "WeblogAspNet\\Controllers\\BlogPostController.cs",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAmwFcAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-27T16:06:29.883Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

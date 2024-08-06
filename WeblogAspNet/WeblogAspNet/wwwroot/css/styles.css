@@ -1,0 +1,229 @@
+﻿html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+body {
+    background-color: #f0f2f5;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+    .form-container h2 {
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .form-container .form-control {
+        border-radius: 50px;
+        border: 1px solid #ddd;
+        padding: 12px;
+        font-size: 16px;
+        outline: none;
+    }
+
+        .form-container .form-control:focus {
+            box-shadow: none;
+            border-color: #ff6b6b;
+        }
+
+    .form-container .btn-custom {
+        background-color: #ff6b6b;
+        color: #ffffff;
+        border-radius: 50px;
+        padding: 12px;
+        border: none;
+        font-size: 16px;
+        font-weight: bold;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+
+        .form-container .btn-custom:hover {
+            background-color: #ff4757;
+            transform: scale(1.05);
+        }
+
+    .form-container .link-custom {
+        color: #ff6b6b;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+
+        .form-container .link-custom:hover {
+            color: #ff4757;
+        }
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #555;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+        .custom-table th,
+        .custom-table td {
+            border-color: #6c757d;
+            text-align: center;
+        }
+
+        .custom-table th {
+            background-color: #343a40;
+            color: white;
+        }
+
+        .btn-custom {
+            background-color: transparent;
+            color: #343a40;
+            padding: 12px;
+            border: 2px solid #343a40;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+            .btn-custom:hover {
+                background-color: #495057;
+                color: #ffffff;
+                border-color: #495057;
+            }
+
+.custom-table th,
+.custom-table td {
+    border-color: #6c757d;
+    text-align: center;
+}
+
+.custom-table th {
+    background-color: #ff4757;
+    color: white;
+}
+
+.btn-custom {
+    background-color: transparent;
+    color: #ff4757;
+    padding: 12px;
+    border: 2px solid #ff4757;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+    .btn-custom:hover {
+        background-color: #ff4757;
+        color: #ffffff;
+        border-color: #ff4757;
+    }
+
+.link {
+    color: #ff6b6b;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+    .link:hover {
+        color: #ff4757;
+    }
+
+            .custom-table th,
+        .custom-table td {
+            border-color: #6c757d;
+            text-align: center;
+        }
+
+        .custom-table th {
+            background-color: #343a40;
+            color: white;
+        }
+
+        .btn-custom {
+            background-color: transparent;
+            color: #343a40;
+            padding: 12px;
+            border: 2px solid #343a40;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+            .btn-custom:hover {
+                background-color: #495057;
+                color: #ffffff;
+                border-color: #495057;
+            }
+
+.custom-table th,
+.custom-table td {
+    border-color: #6c757d;
+    text-align: center;
+}
+
+.custom-table th {
+    background-color: #343a40;
+    color: white;
+}
+
+.btn-custom {
+    background-color: transparent;
+    color: #343a40;
+    padding: 12px;
+    border: 2px solid #343a40;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+    .btn-custom:hover {
+        background-color: #495057;
+        color: #ffffff;
+        border-color: #495057;
+    }
+

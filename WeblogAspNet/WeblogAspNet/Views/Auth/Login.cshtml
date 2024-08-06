@@ -1,0 +1,27 @@
+﻿@model LoginModel
+
+@{
+    ViewData["Title"] = "เข้าสู่ระบบ";
+}
+
+<div class="form-container">
+    <h2 class="text-center">เข้าสู่ระบบ</h2>
+    <form asp-action="Login" asp-controller="Auth" method="post">
+        <div class="form-group mb-3">
+            <label asp-for="Username" class="form-label">ชื่อผู้ใช้</label>
+            <input asp-for="Username" class="form-control" placeholder="กรอกชื่อผู้ใช้">
+            <span asp-validation-for="Username" class="text-danger small"></span>
+        </div>
+        <div class="form-group mb-3">
+            <label asp-for="Password" class="form-label">กรอกรหัสผ่าน</label>
+            <input asp-for="Password" class="form-control" placeholder="กรอกรหัสผ่าน">
+            <span asp-validation-for="Password" class="text-danger small"></span>
+        </div>
+        <div class="form-group mb-4 text-center">
+            <button type="submit" class="btn btn-custom w-100">เข้าสู่ระบบ</button>
+        </div>
+        <div class="text-center">
+            <a class="register link" asp-action="Register" asp-controller="Auth">ยังไม่มีบัญชีใช่ไหม? ลงทะเบียน</a>
+        </div>
+    </form>
+</div>

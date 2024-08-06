@@ -1,0 +1,106 @@
+﻿@model PostCreateModel
+
+<div class="edit-post-form">
+    <h2 class="text-center">@(Model.Post.PostId == 0 ? "สร้างโพสใหม่" : "แก้ไขโพสต์")</h2>
+    <form asp-controller="BlogPost" asp-action="Post" method="post">
+        @Html.AntiForgeryToken()
+
+        <input type="hidden" asp-for="Post.PostId" />
+
+        <div class="form-group mb-3">
+            <label asp-for="Post.Title" class="form-label">หัวเรื่อง</label>
+            <input asp-for="Post.Title" class="form-control" placeholder="กรุณากรอกหัวเรื่อง" />
+            <span asp-validation-for="Post.Title" class="text-danger small"></span>
+        </div>
+
+        <div class="form-group mb-3">
+            <label asp-for="Post.Content" class="form-label">เนื้อหา</label>
+            <textarea asp-for="Post.Content" class="form-control" rows="7" placeholder="กรุณากรอกเนื้อหา"></textarea>
+            <span asp-validation-for="Post.Content" class="text-danger small"></span>
+        </div>
+
+        <div class="form-group mb-4">
+            <label asp-for="Post.CategoryId" class="form-label">หมวดหมู่</label>
+            <select asp-for="Post.CategoryId" asp-items="@(new SelectList(Model.Categories, "CategoryId", "CategoryName"))" class="form-control">
+                <option value="">กรุณาเลือกหมวดหมู่</option>
+            </select>
+            <span asp-validation-for="Post.CategoryId" class="text-danger small"></span>
+        </div>
+
+        <div class="d-flex justify-content-between">
+            <input type="submit" value="บันทึก" class="btn btn-custom" />
+            <a asp-action="Index" class="btn btn-custom">กลับไปยังรายการ</a>
+        </div>
+    </form>
+</div>
+<style>
+    body {
+        background-color: #f0f2f5;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        width: 100%;
+    }
+
+    .edit-post-form {
+        width: 100%;
+        max-width: 1000px;
+        padding: 30px;
+        border-radius: 12px;
+        background-color: #ffffff;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        margin: 0 auto;
+    }
+
+        .edit-post-form .form-control {
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            padding: 12px;
+            font-size: 16px;
+            outline: none;
+        }
+
+            .edit-post-form .form-control:focus {
+                box-shadow: none;
+                border-color: #ff6b6b;
+            }
+
+        .edit-post-form .btn-custom {
+            background-color: transparent;
+            color: #ff6b6b;
+            border-radius: 20px;
+            padding: 12px;
+            border: 2px solid #ff6b6b;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.3s, color 0.3s;
+        }
+
+            .edit-post-form .btn-custom:hover {
+                background-color: #ff4757;
+                color: #ffffff;
+                transform: scale(1.05);
+            }
+
+    .form-label {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 16px;
+        color: #555;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    .text-center {
+        text-align: center;
+        font-size: 2em;
+        color: #333;
+        margin-bottom: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        position: relative;
+    }
+</style>

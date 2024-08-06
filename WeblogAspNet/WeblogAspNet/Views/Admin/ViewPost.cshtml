@@ -1,0 +1,48 @@
+﻿@using WeblogAspNet.Data
+ @model Post
+
+@{
+    Layout = "_LayoutAdmin";
+    ViewData["Title"] = Model.Title;
+    ViewData["CardTitle"] = Model.Title;
+}
+
+<div class="view-post container mt-4">
+    <h2 class="text-center mb-4">@Model.Title</h2>
+    <div class="post-details">
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <strong>ผู้เขียน:</strong> <span>@Model.User?.Username</span>
+            </div>
+            <div class="col-md-6 text-end">
+                <strong>สถานะ:</strong>
+                @if (Model.IsBanned == true)
+                {
+                    <span class="badge bg-danger">
+                        โพสต์นี้ถูกแบนแล้ว
+                    </span>
+                }
+                else
+                {
+                    <span class="badge bg-success">
+                        โพสต์นี้ปกติ
+                    </span>
+                }
+            </div>
+        </div>
+        <div class="mb-3">
+            <strong>วันที่สร้าง:</strong> <span>@Model.CreatedAt</span>
+        </div>
+        <div class="mb-3">
+            <strong>วันที่อัปเดต:</strong> <span>@Model.UpdatedAt</span>
+        </div>
+        <div class="mb-4">
+            <strong>เนื้อหา:</strong>
+            <p>@Model.Content</p>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-end">
+        <a asp-action="ManagePosts" class="btn btn-secondary">กลับไปยังรายการ</a>
+    </div>
+</div>

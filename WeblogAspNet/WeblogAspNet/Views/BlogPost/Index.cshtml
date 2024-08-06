@@ -1,0 +1,48 @@
+﻿@using WeblogAspNet.Data
+@model (List<Post> BlogPosts, List<Category> Categories)
+
+<div class="table-responsive">
+    <div class="mb-3">
+        <a asp-controller="BlogPost" asp-action="Post" class="btn btn-custom w-100">
+            สร้างบทความใหม่
+        </a>
+    </div>
+    <table class="table table-striped table-hover custom-table">
+        <thead>
+            <tr>
+                <th>ชื่อเรื่อง</th>
+                <th>หมวดหมู่</th>
+                <th>วันเวลา(สร้าง)</th>
+                <th>วันเวลา(แก้ไขล่าสุด)</th>
+                <th>ดำเนินการ</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.BlogPosts != null && Model.BlogPosts.Any())
+            {
+                @foreach (var post in Model.BlogPosts)
+                {
+                    <tr>
+                        <td>@post.Title</td>
+                        <td>@Model.Categories.FirstOrDefault(c => c.CategoryId == post.CategoryId)?.CategoryName</td>
+                        <td>@post.CreatedAt</td>
+                        <td>@post.UpdatedAt</td>
+                        <td>
+                            <a asp-controller="BlogPost" asp-action="Post" asp-route-id="@post.PostId" class="btn btn-outline-primary btn-sm">แก้ไข</a>
+                            <form asp-controller="BlogPost" asp-action="Delete" asp-route-id="@post.PostId" method="post" class="d-inline">
+                                @Html.AntiForgeryToken()
+                                <button type="submit" class="btn btn-outline-danger btn-sm" onclick="return confirm('คุณต้องการลบใช่หรือไม่?');">ลบ</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="6" class="text-center-md">คุณยังไม่มีบทความ</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

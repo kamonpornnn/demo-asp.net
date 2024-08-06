@@ -1,0 +1,33 @@
+﻿@model EditProfileModel
+
+@{
+    ViewData["Title"] = "แก้ไขโปรไฟล์";
+}
+
+<div class="form-container">
+    <form asp-action="Index" method="post">
+        <h2 class="text-center">@ViewData["Title"]</h2>
+        @Html.AntiForgeryToken()
+        <div class="form-group mb-4">
+            <label asp-for="Username" class="form-label">ชื่อผู้ใช้</label>
+            <input asp-for="Username" class="form-control" readonly />
+            <span asp-validation-for="Username" class="text-danger small"></span>
+        </div>
+        <div class="form-group mb-4">
+            <label asp-for="Firstname" class="form-label">ชื่อจริง</label>
+            <input asp-for="Firstname" class="form-control" />
+            <span asp-validation-for="Firstname" class="text-danger small"></span>
+        </div>
+        <div class="form-group mb-4">
+            <label asp-for="Lastname" class="form-label">นามสกุล</label>
+            <input asp-for="Lastname" class="form-control" />
+            <span asp-validation-for="Lastname" class="text-danger small"></span>
+        </div>
+        <div class="text-center mb-4">
+            <button type="submit" class="btn btn-custom w-100">บันทึกการเปลี่ยนแปลง</button>
+        </div>
+        <div class="text-center">
+            <a class="link" asp-controller="Home" asp-action="Index">กลับสู่หน้าหลัก</a>
+        </div>
+    </form>
+</div>

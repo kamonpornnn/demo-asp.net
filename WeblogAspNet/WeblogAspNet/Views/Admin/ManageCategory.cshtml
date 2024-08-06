@@ -1,0 +1,57 @@
+﻿@using WeblogAspNet.Data
+@model IEnumerable<Category>
+
+@{
+    Layout = "_LayoutAdmin";
+    ViewData["Title"] = "จัดการหมวดหมู่";
+    ViewData["CardTitle"] = "จัดการหมวดหมู่";
+    ViewBag.ActionName = "ManageCategory";
+}
+
+<a asp-controller="Admin" asp-action="CategoryForm" class="btn btn-dark btn-md mb-4">
+    เพิ่มหมวดหมู่
+</a>
+
+<div class="table-responsive">
+    <table class="table table-striped table-hover custom-table">
+        <thead>
+            <tr>
+                <th class="w-80">ชื่อหมวดหมู่</th>
+                <th class="w-20">จัดการ</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.CategoryName</td>
+                    <td>
+                        <div class="d-none d-sm-inline">
+                            <a asp-controller="Admin" asp-action="CategoryForm" asp-route-id="@item.CategoryId" class="btn btn-warning btn-sm w-25">
+                                แก้ไข
+                            </a>
+                            <form asp-action="DeleteCategory" method="post" style="display:inline;">
+                                <input type="hidden" name="id" value="@item.CategoryId" />
+                                <button type="submit" class="btn btn-danger btn-sm w-25" onclick="return confirm('คุณแน่ใจหรือไม่ว่าต้องการลบหมวดหมู่นี้?');">
+                                    ลบ
+                                </button>
+                            </form>
+                        </div>
+
+                        <div class="d-inline d-sm-none">
+                            <a asp-controller="Admin" asp-action="CategoryForm" asp-route-id="@item.CategoryId" class="btn btn-warning btn-sm" title="แก้ไข">
+                                <i class="fas fa-edit"></i>
+                            </a>
+                            <form asp-action="DeleteCategory" method="post" style="display:inline;">
+                                <input type="hidden" name="id" value="@item.CategoryId" />
+                                <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('คุณแน่ใจหรือไม่ว่าต้องการลบหมวดหมู่นี้?');" title="ลบ">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

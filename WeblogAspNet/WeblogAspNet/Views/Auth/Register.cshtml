@@ -1,0 +1,42 @@
+﻿@model RegisterModel
+
+@{
+    ViewData["Title"] = "ลงทะเบียน";
+}
+
+<div class="form-container">
+    <h2 class="text-center">ลงทะเบียน</h2>
+    <form asp-action="Register" asp-controller="Auth" method="post">
+        <div class="form-group mb-3">
+            <label asp-for="Firstname" class="form-label">ชื่อจริง</label>
+            <input asp-for="Firstname" class="form-control" placeholder="กรอกชื่อจริง">
+            <span asp-validation-for="Firstname" class="text-danger small"></span>
+        </div>
+        <div class="form-group mb-3">
+            <label asp-for="Lastname" class="form-label">นามสกุล</label>
+            <input asp-for="Lastname" class="form-control" placeholder="กรอกนามสกุล">
+            <span asp-validation-for="Lastname" class="text-danger small"></span>
+        </div>
+        <div class="form-group mb-3">
+            <label asp-for="Username" class="form-label">ชื่อผู้ใช้</label>
+            <input asp-for="Username" class="form-control" placeholder="กรอกชื่อผู้ใช้">
+            <span asp-validation-for="Username" class="text-danger small"></span>
+        </div>
+        <div class="form-group mb-3">
+            <label asp-for="Password" class="form-label">รหัสผ่าน</label>
+            <input asp-for="Password" class="form-control" placeholder="กรอกรหัสผ่าน" type="password">
+            <span asp-validation-for="Password" class="text-danger small"></span>
+        </div>
+        <div class="form-group mb-3">
+            <label asp-for="ConfirmPassword" class="form-label">ยืนยันรหัสผ่าน</label>
+            <input asp-for="ConfirmPassword" class="form-control" placeholder="ยืนยันรหัสผ่าน" type="password">
+            <span asp-validation-for="ConfirmPassword" class="text-danger small"></span>
+        </div>
+        <div class="form-group mb-3 text-center">
+            <button type="submit" class="btn btn-custom w-100">ลงทะเบียน</button>
+        </div>
+        <div class="text-center">
+            <a class="login link" asp-action="Login" asp-controller="Auth">มีบัญชีอยู่แล้ว? เข้าสู่ระบบ</a>
+        </div>
+    </form>
+</div>
